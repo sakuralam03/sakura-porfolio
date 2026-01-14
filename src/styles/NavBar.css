@@ -1,0 +1,102 @@
+/* NavBar.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav.navbar {
+  position: fixed;       /* stick to top */
+  top: 0;
+  left: 0;
+  width: 100%;           /* full width */
+  z-index: 50;           /* above other content */
+  background: linear-gradient(to right, #fce7f3, #e9d5ff); /* pink → purple gradient */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Inner flex wrapper */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+/* Logo + title */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo img {
+  height: 32px;
+  width: 32px;
+}
+
+.navbar-logo span {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+}
+
+/* Desktop links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #db2777; /* pink-600 */
+}
+
+/* Mobile menu button */
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #374151;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile dropdown */
+.navbar-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.5rem 1rem;
+  background: #fdf2f8; /* pink-50 */
+  font-weight: 500;
+  color: #374151;
+}
+
+.navbar-dropdown a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-dropdown a:hover {
+  color: #db2777;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* hide desktop links */
+  }
+  .navbar-toggle {
+    display: block; /* show hamburger */
+  }
+}
