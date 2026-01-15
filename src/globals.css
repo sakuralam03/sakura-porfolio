@@ -1,5 +1,5 @@
-/* global.css */
-  html {
+/* Smooth scrolling */
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,17 +13,36 @@ html, body {
   min-height: 100vh;
   overflow-x: hidden; /* allow vertical scroll */
   font-family: 'Inter', sans-serif;
+  background: transparent; /* ✅ no competing background */
+}
+.content-wrapper {
+  position: relative;
+  z-index: 1;   /* ✅ ensures content sits above background */
+}
+
+/* Background wrapper */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;              /* sits behind content */
+  pointer-events: none;
+  overflow: hidden;
   background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
 }
 
-
-/* Twinkling stars */
+/* Stars */
 .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
-  position: absolute;
   background: white;
-  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+  box-shadow:
+    2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
     22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
     38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
     53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
@@ -42,10 +61,13 @@ html, body {
 .stars::after {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
   background: white;
-  box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+  box-shadow:
+    8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
     33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
     57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
     81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
@@ -64,32 +86,13 @@ html, body {
   animation: shoot 3s infinite ease-in;
 }
 
-.shooting-star:nth-child(2) {
-  top: 20%;
-  left: -100px;
-  animation-delay: 0s;
-}
-.shooting-star:nth-child(3) {
-  top: 35%;
-  left: -100px;
-  animation-delay: 1s;
-}
-.shooting-star:nth-child(4) {
-  top: 50%;
-  left: -100px;
-  animation-delay: 2s;
-}
-.shooting-star:nth-child(5) {
-  top: 65%;
-  left: -100px;
-  animation-delay: 3s;
-}
-.shooting-star:nth-child(6) {
-  top: 80%;
-  left: -100px;
-  animation-delay: 4s;
-}
+.shooting-star:nth-child(2) { top: 20%; left: -100px; animation-delay: 0s; }
+.shooting-star:nth-child(3) { top: 35%; left: -100px; animation-delay: 1s; }
+.shooting-star:nth-child(4) { top: 50%; left: -100px; animation-delay: 2s; }
+.shooting-star:nth-child(5) { top: 65%; left: -100px; animation-delay: 3s; }
+.shooting-star:nth-child(6) { top: 80%; left: -100px; animation-delay: 4s; }
 
+/* Animations */
 @keyframes twinkle {
   0%, 100% { opacity: 0.8; }
   50% { opacity: 0.4; }

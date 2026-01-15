@@ -1,0 +1,62 @@
+/* ExperienceSection.css */
+
+.experience-section {
+  padding: 5rem 1.5rem;
+  min-height: 100vh;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .experience-section {
+    padding: 5rem 4rem;
+  }
+}
+
+.experience-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f9a8d4; /* pale pink */
+}
+
+.experience-date {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #d1d5db; /* gray-300 */
+}
+
+.experience-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-bullets li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.experience-skills {
+  font-size: 1rem;
+  color: #f3f4f6; /* gray-100 */
+}
