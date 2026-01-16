@@ -1,0 +1,91 @@
+.Volunteer-Section {
+  padding: 5rem 1.5rem;
+  min-height: 100vh;
+  color: white;
+  text-align: center; /* centers heading */
+}
+
+.Volunteer-heading {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #f9a8d4; /* pale pink heading */
+  text-align: center; /* ensure center */
+}
+
+/* Card list */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Card */
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: left; /* keeps text readable */
+}
+
+/* Header with image + title */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* 🔥 IMAGE SIZE INCREASED */
+.experience-image {
+  width: 96px;   /* was 64px */
+  height: 96px;  /* was 64px */
+  object-fit: contain;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* Title */
+.experience-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #f9a8d4;
+}
+
+/* Date */
+.experience-date {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* Bullet list */
+.experience-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.experience-bullets li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #f3f4f6;
+}
+
+/* 📱 Mobile tweak */
+@media (max-width: 640px) {
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-card {
+    text-align: center;
+  }
+
+  .experience-bullets {
+    padding-left: 1.2rem;
+    text-align: left;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import imgHero from "../assets/f298b5e0434fd3bfeff706f169a1515f2a8872f2.png";
-import "../styles/HeroSection.css"; // ✅ Import the CSS
+import "../styles/HeroSection.css"; //
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
             strings={["Sakura 🌸"]}
             typeSpeed={80}
             backSpeed={40}
-            loop={false}
+            loop={true}
             className="typed-text"
           />
         </h1>

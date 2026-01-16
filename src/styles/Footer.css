@@ -1,0 +1,56 @@
+.footer {
+  background-color: #0b0b2b; /* dark navy to match your theme */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f9a8d4; /* pale pink accent */
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #9ca3af; /* gray-400 for subtle contrast */
+}
+.footer {
+  background-color: #0b0b2b; /* dark navy to match your theme */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f9a8d4; /* pale pink accent */
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #9ca3af; /* gray-400 for subtle contrast */
+}

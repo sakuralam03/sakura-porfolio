@@ -1,0 +1,62 @@
+.projects-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #111827; /* dark background to match About/Experience */
+  color: white; /* default font color */
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f9a8d4; /* pale pink heading */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05); /* semi-transparent card like Experience */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  color: white; /* ensure text inside stays white */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #f9a8d4; /* pale pink section titles */
+}
+
+.project-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #f9a8d4; /* pale pink button */
+  color: #111827; /* dark text for contrast */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #f472b6; /* slightly darker pink on hover */
+  color: white; /* invert text on hover */
+}
