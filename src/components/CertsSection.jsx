@@ -1,16 +1,19 @@
 // CertsSection.jsx
 import React from 'react';
 import "../styles/CertsSection.css";
-
+import googlecerts from '../assets/googlecerts.png';
+import hexadvent from '../assets/Hexadvent.png';
+import tisc from '../assets/TISC.png';
+import tikoktechjam from '../assets/Tikoktechjam.png';
+import cryptoblockchain from '../assets/cryptoblockchain.png';
 const certs = [
-  { title: 'CDDC Participant', image: 'src/assets/cddc.png' },
-  { title: 'Google Cybersecurity Certificate', image: 'src/assets/googlecerts.png' },
-  { title: 'Hex Advent CTF', image: 'src/assets/Hexadvent.png' },
-  { title: 'TISC CTF Participation', image: 'src/assets/TISC.png' },
-  { title: 'TikTok TechJam Hackathon', image: 'src/assets/Tikoktechjam.png' },
-  { title: 'Crypto & Blockchain Compliance', image: 'src/assets/cryptoblockchain.png' },
+  { title: 'CDDC Participant', image: cddc },
+  { title: 'Google Cybersecurity Certificate', image: googlecerts },
+  { title: 'Hex Advent CTF', image: hexadvent },
+  { title: 'TISC CTF Participation', image: tisc },
+  { title: 'TikTok TechJam Hackathon', image: tikoktechjam },
+  { title: 'Crypto & Blockchain Compliance', image: cryptoblockchain },
 ];
-
 const CertsSection = () => {
   return (
     <section className="certs-section">
