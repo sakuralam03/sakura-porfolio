@@ -1,26 +1,31 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import WebDevelopment from "./pages/webdevelopment";
+import GameDevelopment from "./pages/GameDevelopment";
 
 const App = () => {
   return (
-    <div>
-      {/* Background wrapper only for stars */}
+    <Router>
       <div className="background-wrapper">
         <div className="stars"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
-        <div className="shooting-star"></div>
+        {[...Array(5)].map((_, i) => (
+          <div key={i} className="shooting-star"></div>
+        ))}
       </div>
 
-      {/* Foreground content */}
       <div className="content-wrapper">
         <Navbar />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/webdevelopment" element={<WebDevelopment />} />
+          <Route path="/gamedevelopment" element={<GameDevelopment />} />
+
+      
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 };
 

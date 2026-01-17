@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";   // ✅ import Link from react-router-dom
 import imgLogo from "../assets/b3e9c822eba4e3eca989f7257e890b4100f282f3.png";
-import "../styles/NavBar.css"; //
+import "../styles/NavBar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +11,16 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo + Title */}
         <div className="navbar-logo">
-          <img src={imgLogo} alt="Sakura Logo" />
-          <span>Sakura</span>
+          {/* Clicking logo goes back to Home */}
+          <Link to="/">
+            <img src={imgLogo} alt="Sakura Logo" />
+            <span>Sakura</span>
+          </Link>
         </div>
 
         {/* Desktop Links */}
         <ul className="navbar-links">
+          <li><Link to="/">Home</Link></li> {/* ✅ always goes back to Home */}
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -37,6 +42,7 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {isOpen && (
         <ul className="navbar-dropdown">
+          <li><Link to="/">Home</Link></li> {/* ✅ mobile menu also has Home */}
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
