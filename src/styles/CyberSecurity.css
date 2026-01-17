@@ -1,0 +1,88 @@
+.cyber-section {
+  padding: 4rem 2rem;
+  color: white;
+  background-color: transparent;
+}
+
+.cyber-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cyber-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cyber-title {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #f9a8d4;
+}
+
+.cyber-project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .cyber-project {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.cyber-details {
+  flex: 2;
+}
+
+.cyber-name {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #f9a8d4;
+}
+
+.cyber-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cyber-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cyber-links a {
+  padding: 0.5rem 1rem;
+  background-color: #1f2937;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: background 0.2s ease;
+}
+
+.cyber-links a:hover {
+  background-color: #374151;
+}
+
+.cyber-video,
+.cyber-visuals {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cyber-video iframe,
+.cyber-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
