@@ -1,6 +1,6 @@
 # dependencies
 node_modules/
-dist
+dist/git rm -r --cached dist
 
 # local env files
 .env

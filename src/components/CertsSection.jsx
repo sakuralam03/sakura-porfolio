@@ -6,6 +6,8 @@ import hexadvent from '../assets/Hexadvent.png';
 import tisc from '../assets/TISC.png';
 import tikoktechjam from '../assets/Tikoktechjam.png';
 import cryptoblockchain from '../assets/cryptoblockchain.png';
+import cddc from '../assets/cddc.png';
+
 const certs = [
   { title: 'CDDC Participant', image: cddc },
   { title: 'Google Cybersecurity Certificate', image: googlecerts },
